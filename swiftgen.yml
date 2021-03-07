@@ -1,0 +1,18 @@
+xcassets:
+    inputs: IDEA_Hospital_Team4/Resources/Assets/Assets.xcassets
+    outputs:
+        templateName: swift5
+        output: IDEA_Hospital_Team4/Resources/Assets/AssetsManager.swift
+
+colors:
+    inputs: IDEA_Hospital_Team4/Resources/Colors/Colors.txt
+    outputs:
+        templateName: swift5
+        output: IDEA_Hospital_Team4/Resources/Colors/ColorsManager.swift
+
+fonts:
+    inputs: IDEA_Hospital_Team4/Resources/Fonts
+    outputs:
+        templateName: swift5
+        output: IDEA_Hospital_Team4/Resources/Fonts/FontsManager.swift
+

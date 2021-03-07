@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A99-Vk-2bu">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TestVC-->
+        <scene sceneID="Nzh-2K-7L4">
+            <objects>
+                <viewController storyboardIdentifier="TestVC" id="A99-Vk-2bu" customClass="TestVC" customModule="IDEA_Hospital_Team4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2TN-ZT-rJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqb-dL-wX4">
+                                <rect key="frame" x="20" y="139" width="374" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhK-mL-ldh">
+                                <rect key="frame" x="20" y="254" width="374" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-RD-4lP">
+                                <rect key="frame" x="20" y="433" width="374" height="47"/>
+                                <color key="backgroundColor" red="0.33333334329999997" green="0.14203659499999999" blue="6.408408081e-05" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Book Now">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="bookNow:" destination="A99-Vk-2bu" eventType="touchUpInside" id="nYx-fW-9Cs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hhK-mL-ldh" firstAttribute="trailing" secondItem="Bqb-dL-wX4" secondAttribute="trailing" id="6SR-tQ-sc4"/>
+                            <constraint firstItem="Bqb-dL-wX4" firstAttribute="centerX" secondItem="ttS-jS-vly" secondAttribute="centerX" id="7hJ-Jr-7FW"/>
+                            <constraint firstItem="ttS-jS-vly" firstAttribute="trailing" secondItem="Bqb-dL-wX4" secondAttribute="trailing" constant="20" id="8kX-Ll-yoe"/>
+                            <constraint firstItem="hhK-mL-ldh" firstAttribute="centerX" secondItem="Bqb-dL-wX4" secondAttribute="centerX" id="ClU-CD-TTL"/>
+                            <constraint firstItem="Bqb-dL-wX4" firstAttribute="top" secondItem="ttS-jS-vly" secondAttribute="top" constant="95" id="MEG-lv-3Oj"/>
+                            <constraint firstItem="Bqb-dL-wX4" firstAttribute="leading" secondItem="ttS-jS-vly" secondAttribute="leading" constant="20" id="MMZ-Hr-HZd"/>
+                            <constraint firstItem="Dff-RD-4lP" firstAttribute="leading" secondItem="hhK-mL-ldh" secondAttribute="leading" id="SDb-9U-htw"/>
+                            <constraint firstItem="Dff-RD-4lP" firstAttribute="top" secondItem="hhK-mL-ldh" secondAttribute="bottom" constant="144" id="Wcg-77-ji8"/>
+                            <constraint firstItem="hhK-mL-ldh" firstAttribute="leading" secondItem="Bqb-dL-wX4" secondAttribute="leading" id="ZFr-rW-oxx"/>
+                            <constraint firstItem="Dff-RD-4lP" firstAttribute="centerX" secondItem="hhK-mL-ldh" secondAttribute="centerX" id="gU1-pQ-FrS"/>
+                            <constraint firstItem="Dff-RD-4lP" firstAttribute="trailing" secondItem="hhK-mL-ldh" secondAttribute="trailing" id="imS-CM-rsI"/>
+                            <constraint firstItem="hhK-mL-ldh" firstAttribute="top" secondItem="Bqb-dL-wX4" secondAttribute="bottom" constant="80" id="mEw-zx-AJA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ttS-jS-vly"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstLabel" destination="Bqb-dL-wX4" id="r96-Ni-obE"/>
+                        <outlet property="secondLabel" destination="hhK-mL-ldh" id="qTE-8u-ggX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ky-2O-Cyn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="81"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,22 @@
+xcassets:
+ inputs: IDEHospital_Intake1_Team5/Resources/Assets/Assets.xcassets
+ outputs:
+   templateName: swift5
+   output: IDEHospital_Intake1_Team5/Resources/Assets/AssetsManager.swift
+colors:
+  inputs: IDEHospital_Intake1_Team5/Resources/Colors/Colors.txt
+  outputs:
+    templateName: swift5
+    output: IDEHospital_Intake1_Team5/Resources/Colors/ColorsManager.swift
+
+fonts:
+  inputs: IDEHospital_Intake1_Team5/Resources/Fonts
+  outputs:
+    templateName: swift5
+    output: IDEHospital_Intake1_Team5/Resources/Fonts/FontsManager.swift
+
+strings:
+  inputs: IDEHospital_Intake1_Team5/Resources/Strings/Localizable.strings
+  outputs:
+    templateName: structured-swift5
+    output: IDEHospital_Intake1_Team5/Resources/Strings/StringsManager.swift

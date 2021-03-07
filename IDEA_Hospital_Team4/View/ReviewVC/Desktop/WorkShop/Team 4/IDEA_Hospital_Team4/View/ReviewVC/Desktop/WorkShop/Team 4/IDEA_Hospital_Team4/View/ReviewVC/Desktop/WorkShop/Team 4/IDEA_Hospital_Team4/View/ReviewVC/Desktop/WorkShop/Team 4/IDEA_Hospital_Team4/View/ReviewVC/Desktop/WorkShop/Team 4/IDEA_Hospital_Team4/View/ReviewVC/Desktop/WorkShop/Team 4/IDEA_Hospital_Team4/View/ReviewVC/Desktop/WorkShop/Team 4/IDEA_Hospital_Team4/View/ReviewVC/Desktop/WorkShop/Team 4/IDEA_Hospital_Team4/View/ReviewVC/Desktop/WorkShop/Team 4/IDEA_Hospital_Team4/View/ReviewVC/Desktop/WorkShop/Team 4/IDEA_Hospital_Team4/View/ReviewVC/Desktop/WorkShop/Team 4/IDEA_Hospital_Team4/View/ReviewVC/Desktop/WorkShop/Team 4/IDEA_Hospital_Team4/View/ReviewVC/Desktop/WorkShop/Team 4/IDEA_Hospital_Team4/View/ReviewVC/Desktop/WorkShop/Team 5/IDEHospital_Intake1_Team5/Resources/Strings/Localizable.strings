@@ -1,0 +1,58 @@
+/* 
+  Localizable.strings
+  IDEHospital_Intake1_Team5
+
+  Created by AbeerSharaf on 12/19/20.
+  Copyright © 2020 Abeer. All rights reserved.
+*/
+// label text
+   "homeLabel" = "IDEA EG HOSPITAL THE BEST CHOICE";
+   "humanMedicineLabel" = "Human Medicine";
+   "mRILabel" = "MRI";
+   "hOMENURSELabel" = "HOME NURSE";
+   "veterinaryLabel" = "Veterinary";
+   "noDataFoundLabel" = "No Data Found";
+// Cells
+    "DataCell" = "FavoritesAppointmentsTViewCell";
+
+// Parameters Keys
+    "parametersKeyemail" = "email";
+    "parametersKeypassword" = "password";
+    "parametersKeyname" = "name";
+    "parametersKeymobile" = "mobile";
+    "parametersKeymessage" = "message";
+
+// HeaderKeys
+     "contentTypeHeaderKey" = "Content-Type";
+     "authorizationHeaderKey" = "Authorization";
+     "acceptHeaderKey" = "acceptHeaderKey";
+     "acceptLanguageHeaderKey" = "Accept-Language";
+     "categoryTokenHeaderKey" = "X-CSRF-TOKEN";
+
+// HeaderValues
+     "applicationJsonHeaderValue" = "application/json";
+   //  "brearerTokenHeaderValue" = "Bearer \(UserDefaultsManager.shared().token";
+     "acceptHeaderValue" = "application/json";
+     "acceptLanguageHeaderValue" = "en";
+     "categoryTokenHeaderValue" = "76A7SdHtnY2ft6RBeZ4pYDkhxaNNeRFURm4tIJVP";
+
+// Storyboards
+  "mainStoryboard" = "Main";
+
+// View Controllers
+     "homeVC" = "HomeVC";
+     "searchVC" = "SearchVC";
+     "myAppointmentsVC" = "MyAppointmentsVC";
+     "mainTabBarController" = "MainTabBarController";
+
+//Title Alert Action
+     "noTitleAlertAction" = "No";
+     "yesTitleAlertAction" = "Yes";
+     "nameTitleAlertAction" = "Name";
+     "emailTitleAlertAction" = "Email";
+     "passwordTitleAlertAction" = "Password";
+     "ageTitleAlertAction" = "Age";
+     "cancelTitleAlertAction" = "Cancel";
+     "cameraTitleAlertAction" = "Camera";
+     "photoAlbumTitleAlertAction" = "Photo Album";
+     "successTitleAlertAction" = "Success";

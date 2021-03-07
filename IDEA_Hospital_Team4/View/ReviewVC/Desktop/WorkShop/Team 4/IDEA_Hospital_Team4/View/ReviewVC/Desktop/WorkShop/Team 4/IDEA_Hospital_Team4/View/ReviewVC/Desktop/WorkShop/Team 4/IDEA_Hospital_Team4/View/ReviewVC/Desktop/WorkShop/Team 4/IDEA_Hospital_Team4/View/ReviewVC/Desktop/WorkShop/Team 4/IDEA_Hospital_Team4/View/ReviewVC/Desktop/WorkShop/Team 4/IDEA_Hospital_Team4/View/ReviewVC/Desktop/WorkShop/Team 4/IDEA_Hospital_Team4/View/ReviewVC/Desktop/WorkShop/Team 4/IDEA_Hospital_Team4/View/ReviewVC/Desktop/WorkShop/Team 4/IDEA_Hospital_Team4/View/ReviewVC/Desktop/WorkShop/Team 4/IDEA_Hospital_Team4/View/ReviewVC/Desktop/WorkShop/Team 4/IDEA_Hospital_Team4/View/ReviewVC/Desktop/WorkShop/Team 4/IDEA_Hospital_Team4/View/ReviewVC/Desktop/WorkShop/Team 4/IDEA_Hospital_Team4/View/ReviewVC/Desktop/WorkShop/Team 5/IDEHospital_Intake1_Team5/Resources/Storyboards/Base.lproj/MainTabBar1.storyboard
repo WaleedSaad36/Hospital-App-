@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3l5-Ew-qGG">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="Wby-sg-yBL">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="light" id="3l5-Ew-qGG" customClass="MainTabBarController" customModule="IDEHospital_Intake1_Team5" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z9X-wo-gA3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IuM-iO-Ryh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5070" y="-682"/>
+        </scene>
+        <!--DoctorVC-->
+        <scene sceneID="f9b-LR-khN">
+            <objects>
+                <viewController interfaceStyle="light" id="yNf-hf-fDm" customClass="DoctorVC" customModule="IDEHospital_Intake1_Team5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2RV-aZ-weZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ee8-oJ-ZOC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ngq-Vq-6Lb" customClass="DoctorView" customModule="IDEHospital_Intake1_Team5" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TWE-0O-c6B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62p-Sh-JVb">
+                                <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                <color key="barTintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Doctor Profile" id="Tb7-LU-sve">
+                                        <barButtonItem key="backBarButtonItem" title="back" id="Ie1-v2-PI4"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" style="plain" id="12h-bW-lDN">
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings" style="plain" id="jnB-1k-ibH">
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="62p-Sh-JVb" secondAttribute="trailing" symbolic="YES" id="6Op-6L-aAi"/>
+                            <constraint firstItem="TWE-0O-c6B" firstAttribute="leading" secondItem="ngq-Vq-6Lb" secondAttribute="leading" id="Y0c-w3-JQh"/>
+                            <constraint firstAttribute="trailing" secondItem="TWE-0O-c6B" secondAttribute="trailing" id="ZNy-Jt-MNo"/>
+                            <constraint firstItem="62p-Sh-JVb" firstAttribute="leading" secondItem="ngq-Vq-6Lb" secondAttribute="leading" id="dfg-ZP-Ccr"/>
+                            <constraint firstItem="62p-Sh-JVb" firstAttribute="top" secondItem="2RV-aZ-weZ" secondAttribute="bottom" constant="35" id="mrE-gw-20f"/>
+                            <constraint firstItem="TWE-0O-c6B" firstAttribute="top" secondItem="2RV-aZ-weZ" secondAttribute="bottom" id="vC6-tl-Vp9"/>
+                            <constraint firstItem="Ee8-oJ-ZOC" firstAttribute="top" secondItem="TWE-0O-c6B" secondAttribute="bottom" id="yRG-hv-t59"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="backgroundImageView" destination="TWE-0O-c6B" id="bIZ-oO-x9J"/>
+                        </connections>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSC-Uw-NAy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5042" y="50"/>
+        </scene>
+        <!--My FavoritesVC-->
+        <scene sceneID="9za-46-ebC">
+            <objects>
+                <viewController storyboardIdentifier="MyFavoritesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="light" id="ib6-ve-AYs" customClass="MyFavoritesVC" customModule="IDEHospital_Intake1_Team5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D0V-RP-SX3"/>
+                        <viewControllerLayoutGuide type="bottom" id="LGc-BB-5Ki"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wz7-yH-9aR" customClass="MyFavoriteView" customModule="IDEHospital_Intake1_Team5" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JNt-1m-td1">
+                                <rect key="frame" x="0.0" y="-59" width="375" height="763"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zAv-Rd-j8w">
+                                <rect key="frame" x="0.0" y="79" width="375" height="588"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QTg-yd-Bzu">
+                                <rect key="frame" x="0.0" y="311" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIE-XD-tma">
+                                <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                <color key="barTintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="My Favorites" id="GEc-w4-Xtp">
+                                        <barButtonItem key="backBarButtonItem" title="back" id="Rv8-mi-mzw"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" style="plain" id="Re0-qL-cIv">
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings" style="plain" id="b9E-my-18t">
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JNt-1m-td1" firstAttribute="leading" secondItem="Wz7-yH-9aR" secondAttribute="leading" id="0hg-bY-tKc"/>
+                            <constraint firstItem="gIE-XD-tma" firstAttribute="leading" secondItem="Wz7-yH-9aR" secondAttribute="leading" id="1eI-ar-oQ8"/>
+                            <constraint firstItem="JNt-1m-td1" firstAttribute="height" secondItem="Wz7-yH-9aR" secondAttribute="height" constant="96" id="2md-X9-c2d"/>
+                            <constraint firstItem="JNt-1m-td1" firstAttribute="width" secondItem="Wz7-yH-9aR" secondAttribute="width" id="6B0-Ie-0rv"/>
+                            <constraint firstItem="JNt-1m-td1" firstAttribute="trailing" secondItem="Wz7-yH-9aR" secondAttribute="trailing" id="JFg-4r-MKw"/>
+                            <constraint firstItem="zAv-Rd-j8w" firstAttribute="leading" secondItem="Wz7-yH-9aR" secondAttribute="leading" id="MEp-PM-cXW"/>
+                            <constraint firstItem="JNt-1m-td1" firstAttribute="top" secondItem="D0V-RP-SX3" secondAttribute="bottom" constant="-59" id="S0W-ud-g8M"/>
+                            <constraint firstItem="JNt-1m-td1" firstAttribute="bottom" secondItem="LGc-BB-5Ki" secondAttribute="top" constant="37" id="dr9-Yh-IXb"/>
+                            <constraint firstAttribute="trailing" secondItem="zAv-Rd-j8w" secondAttribute="trailing" id="msQ-BE-Vlf"/>
+                            <constraint firstItem="gIE-XD-tma" firstAttribute="trailing" secondItem="Wz7-yH-9aR" secondAttribute="trailing" id="nF9-DK-iTF"/>
+                            <constraint firstItem="LGc-BB-5Ki" firstAttribute="top" secondItem="zAv-Rd-j8w" secondAttribute="bottom" id="pml-MC-sAP"/>
+                            <constraint firstItem="gIE-XD-tma" firstAttribute="top" secondItem="Wz7-yH-9aR" secondAttribute="top" constant="35" id="qOJ-1j-A2K"/>
+                            <constraint firstItem="zAv-Rd-j8w" firstAttribute="top" secondItem="gIE-XD-tma" secondAttribute="top" constant="44" id="sTI-2Z-Ap5"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="backgroundImageView" destination="JNt-1m-td1" id="xQX-TE-QR9"/>
+                            <outlet property="favoriteTableView" destination="zAv-Rd-j8w" id="hgK-eD-V9s"/>
+                            <outlet property="noFavoriteLabel" destination="QTg-yd-Bzu" id="3Iy-6T-vpa"/>
+                        </connections>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" id="ayn-Ng-y6f"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="myFavoriteView" destination="Wz7-yH-9aR" id="01H-dk-hfl"/>
+                        <outlet property="view" destination="Wz7-yH-9aR" id="E5W-07-3wn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aY1-cR-Lrb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5731.1594202898559" y="55.842391304347828"/>
+        </scene>
+        <!--My AppointmentsVC-->
+        <scene sceneID="Qff-bz-het">
+            <objects>
+                <viewController storyboardIdentifier="MyAppointmentsVC" wantsFullScreenLayout="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="light" id="f5O-zA-Q0j" customClass="MyAppointmentsVC" customModule="IDEHospital_Intake1_Team5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kly-NE-gvR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zlh-1T-7DL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="bjT-cI-mi4" customClass="MyAppointmentsView" customModule="IDEHospital_Intake1_Team5" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FLJ-Yx-u3E">
+                                <rect key="frame" x="0.0" y="-27" width="375" height="694"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="694" id="bs4-7P-jhJ"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J7Y-Pr-QfW" userLabel="Appointment Table View">
+                                <rect key="frame" x="0.0" y="79" width="375" height="588"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kDP-Qo-Fh4" userLabel="No Item Label">
+                                <rect key="frame" x="0.0" y="311" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvP-Kd-iyu">
+                                <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                <color key="barTintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="My Appointments" id="oDa-S9-Tjn">
+                                        <barButtonItem key="backBarButtonItem" title="back" id="7I7-XM-H22"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" style="plain" id="gxW-KV-HPf">
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings" style="plain" id="niQ-zm-HEO">
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mvP-Kd-iyu" firstAttribute="top" secondItem="bjT-cI-mi4" secondAttribute="top" constant="35" id="HK7-qS-3TY"/>
+                            <constraint firstItem="J7Y-Pr-QfW" firstAttribute="leading" secondItem="bjT-cI-mi4" secondAttribute="leading" id="IGP-9p-DbO"/>
+                            <constraint firstItem="kDP-Qo-Fh4" firstAttribute="centerY" secondItem="bjT-cI-mi4" secondAttribute="centerY" id="MMx-Cn-fWg"/>
+                            <constraint firstAttribute="trailing" secondItem="mvP-Kd-iyu" secondAttribute="trailing" id="MoP-N7-9TK"/>
+                            <constraint firstItem="J7Y-Pr-QfW" firstAttribute="top" secondItem="mvP-Kd-iyu" secondAttribute="top" constant="44" id="OVh-L1-p0Y"/>
+                            <constraint firstItem="FLJ-Yx-u3E" firstAttribute="top" secondItem="Kly-NE-gvR" secondAttribute="bottom" constant="-27" id="QY1-Ru-zdG"/>
+                            <constraint firstItem="J7Y-Pr-QfW" firstAttribute="trailing" secondItem="bjT-cI-mi4" secondAttribute="trailing" id="Qen-eu-bU8"/>
+                            <constraint firstItem="mvP-Kd-iyu" firstAttribute="leading" secondItem="bjT-cI-mi4" secondAttribute="leading" id="RYn-aX-FZW"/>
+                            <constraint firstItem="Zlh-1T-7DL" firstAttribute="top" secondItem="FLJ-Yx-u3E" secondAttribute="bottom" id="W8q-sm-8uf"/>
+                            <constraint firstItem="kDP-Qo-Fh4" firstAttribute="centerX" secondItem="bjT-cI-mi4" secondAttribute="centerX" id="YdF-wv-fwC"/>
+                            <constraint firstAttribute="bottom" secondItem="J7Y-Pr-QfW" secondAttribute="bottom" id="cnu-CQ-cKX"/>
+                            <constraint firstAttribute="trailing" secondItem="FLJ-Yx-u3E" secondAttribute="trailing" id="lJB-DX-Qj7"/>
+                            <constraint firstItem="FLJ-Yx-u3E" firstAttribute="leading" secondItem="bjT-cI-mi4" secondAttribute="leading" id="qtZ-h2-3xC"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="appointmentsTableView" destination="J7Y-Pr-QfW" id="ZcW-Md-brv"/>
+                            <outlet property="backgroundImageView" destination="FLJ-Yx-u3E" id="nJb-mI-TID"/>
+                            <outlet property="noAppointmentLabel" destination="kDP-Qo-Fh4" id="gQT-d2-IGT"/>
+                        </connections>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="R5X-Nn-gk2"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="myAppointmentsView" destination="bjT-cI-mi4" id="Jc4-AS-2PF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g4A-DB-FsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6484.7826086956529" y="52.581521739130437"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="wEM-TO-zvy">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="light" id="3Pu-P5-QZy" customClass="SearchViewController" customModule="IDEHospital_Intake1_Team5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pp9-DO-kPr"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Cx-iU-tFm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="btb-t2-Uyr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-A3-aHY">
+                                <rect key="frame" x="0.0" y="-59" width="375" height="726"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3G-hx-MGj">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Qkz-CB-Yqy"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Search Result " id="LGc-h5-4g7">
+                                        <barButtonItem key="backBarButtonItem" title="back" id="KNI-YQ-qZf"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="back" style="plain" id="Pd6-q4-V58">
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings" style="plain" id="6iN-gl-gIy">
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j3G-hx-MGj" firstAttribute="top" secondItem="pp9-DO-kPr" secondAttribute="bottom" constant="44" id="2pP-EG-bsg"/>
+                            <constraint firstItem="6Cx-iU-tFm" firstAttribute="top" secondItem="gDL-A3-aHY" secondAttribute="bottom" id="4Lv-Xr-px3"/>
+                            <constraint firstItem="j3G-hx-MGj" firstAttribute="leading" secondItem="btb-t2-Uyr" secondAttribute="leading" id="4mY-wW-aP9"/>
+                            <constraint firstItem="gDL-A3-aHY" firstAttribute="leading" secondItem="btb-t2-Uyr" secondAttribute="leading" id="CNj-gg-Ls5"/>
+                            <constraint firstItem="gDL-A3-aHY" firstAttribute="top" secondItem="pp9-DO-kPr" secondAttribute="bottom" constant="-59" id="JWb-Ae-WeY"/>
+                            <constraint firstItem="gDL-A3-aHY" firstAttribute="top" secondItem="pp9-DO-kPr" secondAttribute="bottom" constant="-59" id="T5S-iG-bqU"/>
+                            <constraint firstItem="gDL-A3-aHY" firstAttribute="leading" secondItem="btb-t2-Uyr" secondAttribute="leading" id="bZN-Vk-waH"/>
+                            <constraint firstAttribute="trailing" secondItem="gDL-A3-aHY" secondAttribute="trailing" id="d03-Nb-gHM"/>
+                            <constraint firstItem="6Cx-iU-tFm" firstAttribute="top" secondItem="gDL-A3-aHY" secondAttribute="bottom" id="dC6-a9-n38"/>
+                            <constraint firstAttribute="trailing" secondItem="gDL-A3-aHY" secondAttribute="trailing" id="nQq-Tv-8T5"/>
+                            <constraint firstAttribute="trailing" secondItem="j3G-hx-MGj" secondAttribute="trailing" id="z9D-a9-t5D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="soh-1e-MIk"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNW-W7-U9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4250.7246376811599" y="30.978260869565219"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Apd-kI-S6m">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" interfaceStyle="light" navigationBarHidden="YES" id="ijO-gR-5rM" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="zCu-qL-d8f"/>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KaT-jW-a2J">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRE-H5-vCZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4248" y="-673"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="5oE-cA-8Gn">
+            <objects>
+                <navigationController interfaceStyle="light" navigationBarHidden="YES" id="MNt-RH-ybJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Kjp-vK-Y3e"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QUL-2W-fWW">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oaf-g2-zUq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5735" y="-681"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="fUx-Mu-cc3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" interfaceStyle="light" navigationBarHidden="YES" id="h77-ai-uec" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="4XP-xT-DeB"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dR8-xn-anG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eHM-nU-In0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6480" y="-682"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="11.333333015441895" height="19.333333969116211"/>
+        <image name="main" width="375" height="667"/>
+        <image name="settings" width="23.666666030883789" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

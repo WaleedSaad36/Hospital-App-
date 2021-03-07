@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PT_Sans_Bold.ttf">
+            <string>PTSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--ReviewVC-->
+        <scene sceneID="3ND-JN-ck4">
+            <objects>
+                <viewController storyboardIdentifier="ReviewVC" id="ILU-aI-763" customClass="ReviewVC" customModule="IDEA_Hospital_Team4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Af5-NQ-bOM" customClass="ReviewView" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qk5-mc-3gO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please rate your experience with the doctor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIe-ez-hrZ">
+                                <rect key="frame" x="62.5" y="347.5" width="289" height="23"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbq-2H-YeE" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="60" y="376.5" width="145" height="27"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minTouchRating">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="maH-bJ-H9L" customClass="PaddedTextField" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="409.5" width="289" height="19"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfL-6q-iPg" customClass="IDEHospitalButton" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="30.5" y="598.5" width="353" height="60.5"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="submitReviewBtn:" destination="ILU-aI-763" eventType="touchUpInside" id="2eY-OY-ayv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="maH-bJ-H9L" firstAttribute="top" secondItem="Zbq-2H-YeE" secondAttribute="bottom" constant="6" id="4cu-I8-rGj"/>
+                            <constraint firstItem="Zbq-2H-YeE" firstAttribute="height" secondItem="uIe-ez-hrZ" secondAttribute="height" multiplier="1.2" id="FA3-Fa-w3f"/>
+                            <constraint firstItem="Zbq-2H-YeE" firstAttribute="width" secondItem="uIe-ez-hrZ" secondAttribute="width" multiplier="0.5" id="FO2-fm-E96"/>
+                            <constraint firstItem="uIe-ez-hrZ" firstAttribute="height" secondItem="Af5-NQ-bOM" secondAttribute="height" multiplier="17/667" id="HI8-Yf-Fpt"/>
+                            <constraint firstItem="maH-bJ-H9L" firstAttribute="height" secondItem="Af5-NQ-bOM" secondAttribute="height" multiplier="14/667" id="IxW-BW-MLz"/>
+                            <constraint firstItem="FfL-6q-iPg" firstAttribute="top" secondItem="maH-bJ-H9L" secondAttribute="bottom" constant="170" id="Lk3-Wr-Pqv"/>
+                            <constraint firstItem="uIe-ez-hrZ" firstAttribute="centerX" secondItem="3Eb-fZ-Wt8" secondAttribute="centerX" id="MMC-Zk-4Ij"/>
+                            <constraint firstItem="Qk5-mc-3gO" firstAttribute="width" secondItem="Af5-NQ-bOM" secondAttribute="width" id="OeQ-lz-XiU"/>
+                            <constraint firstItem="uIe-ez-hrZ" firstAttribute="centerY" secondItem="Af5-NQ-bOM" secondAttribute="centerY" multiplier="0.8" constant="0.5" id="Rk0-a3-ock"/>
+                            <constraint firstItem="maH-bJ-H9L" firstAttribute="width" secondItem="uIe-ez-hrZ" secondAttribute="width" id="Snj-AY-itx"/>
+                            <constraint firstItem="uIe-ez-hrZ" firstAttribute="width" secondItem="Af5-NQ-bOM" secondAttribute="width" multiplier="262/375" id="XmL-Kz-Zoa"/>
+                            <constraint firstItem="Zbq-2H-YeE" firstAttribute="top" secondItem="uIe-ez-hrZ" secondAttribute="bottom" constant="6" id="aSj-Mv-qKU"/>
+                            <constraint firstItem="maH-bJ-H9L" firstAttribute="centerX" secondItem="uIe-ez-hrZ" secondAttribute="centerX" id="aSn-eW-2Ie"/>
+                            <constraint firstItem="FfL-6q-iPg" firstAttribute="centerX" secondItem="3Eb-fZ-Wt8" secondAttribute="centerX" id="dmx-2u-0Cf"/>
+                            <constraint firstItem="Qk5-mc-3gO" firstAttribute="centerY" secondItem="Af5-NQ-bOM" secondAttribute="centerY" id="i90-1F-ybh"/>
+                            <constraint firstItem="FfL-6q-iPg" firstAttribute="height" secondItem="Af5-NQ-bOM" secondAttribute="height" multiplier="45/667" id="iVF-uV-gDp"/>
+                            <constraint firstItem="Zbq-2H-YeE" firstAttribute="centerX" secondItem="uIe-ez-hrZ" secondAttribute="centerX" multiplier="0.64" id="t4u-sz-QuV"/>
+                            <constraint firstItem="Qk5-mc-3gO" firstAttribute="height" secondItem="Af5-NQ-bOM" secondAttribute="height" id="ulC-ML-6eE"/>
+                            <constraint firstItem="Qk5-mc-3gO" firstAttribute="centerX" secondItem="Af5-NQ-bOM" secondAttribute="centerX" id="vZs-Tr-BWg"/>
+                            <constraint firstItem="FfL-6q-iPg" firstAttribute="width" secondItem="Af5-NQ-bOM" secondAttribute="width" multiplier="320/375" id="wqO-YN-MRP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Eb-fZ-Wt8"/>
+                        <connections>
+                            <outlet property="LabelRate" destination="uIe-ez-hrZ" id="tsj-s9-a7h"/>
+                            <outlet property="addCommentTxt" destination="maH-bJ-H9L" id="KBH-j0-e8D"/>
+                            <outlet property="background" destination="Qk5-mc-3gO" id="ans-VZ-wpM"/>
+                            <outlet property="starsStackView" destination="Zbq-2H-YeE" id="lHu-QM-K8U"/>
+                            <outlet property="submitReviewBtn" destination="FfL-6q-iPg" id="mZN-IU-gfO"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="reviewView" destination="Af5-NQ-bOM" id="oLj-yn-QZV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNr-mv-7GG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="-157"/>
+        </scene>
+    </scenes>
+</document>

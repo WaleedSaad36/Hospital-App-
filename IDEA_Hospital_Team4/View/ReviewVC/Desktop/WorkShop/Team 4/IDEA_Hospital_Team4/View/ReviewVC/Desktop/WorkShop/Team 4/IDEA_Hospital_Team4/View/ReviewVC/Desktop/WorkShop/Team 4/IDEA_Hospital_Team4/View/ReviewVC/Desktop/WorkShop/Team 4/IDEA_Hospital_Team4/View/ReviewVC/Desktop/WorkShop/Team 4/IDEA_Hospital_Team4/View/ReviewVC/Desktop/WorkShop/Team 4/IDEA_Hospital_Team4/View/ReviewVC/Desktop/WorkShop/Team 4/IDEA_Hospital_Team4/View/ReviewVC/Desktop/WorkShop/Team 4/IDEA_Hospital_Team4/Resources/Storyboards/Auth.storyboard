@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PT_Sans_Bold.ttf">
+            <string>PTSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign UpVC-->
+        <scene sceneID="kYI-zJ-RDL">
+            <objects>
+                <viewController storyboardIdentifier="SignUpVC" id="Hcw-U3-HWb" customClass="SignUpVC" customModule="IDEA_Hospital_Team4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NjM-G5-3ba" customClass="SignUpView" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="52v-yr-O9Q">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="VfI-sS-cIZ" customClass="IDEHospitalTextField" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="30" y="184" width="354" height="48.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameTxt:" destination="OTl-c6-xSd" eventType="editingDidEnd" id="dXE-xc-1gw"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ggs-8E-zo9" customClass="IDEHospitalTextField" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="30" y="258.5" width="354" height="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0g1-in-KOG" customClass="IDEHospitalTextField" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="30" y="332.5" width="354" height="48.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uIH-F3-cNe" customClass="IDEHospitalTextField" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="30" y="407" width="354" height="48.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WnQ-Xa-Kq9" customClass="IDEHospitalTextField" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="30" y="481.5" width="354" height="48.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjR-ay-Ynl" customClass="IDEHospitalButton" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="33" y="572" width="348" height="60.5"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="signUpBtn:" destination="Hcw-U3-HWb" eventType="touchUpInside" id="NjG-7w-iQU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYk-mH-uaA">
+                                <rect key="frame" x="49" y="647.5" width="184.5" height="11"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="By clicking sign up, you agree to our">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="PTSans-Regular"/>
+                                            <font key="NSOriginalFont" size="12" name="PTSans-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WLR-Sn-ZIQ">
+                                <rect key="frame" x="233.5" y="645.5" width="98" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="ayn-fO-w1f"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" Terms &amp; Condition">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="12" name="PTSans-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="termsANdConditionBtn:" destination="Hcw-U3-HWb" eventType="touchUpInside" id="gKc-GZ-huS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UYk-mH-uaA" firstAttribute="top" secondItem="CjR-ay-Ynl" secondAttribute="bottom" constant="15" id="2ZR-ab-m9p"/>
+                            <constraint firstItem="ggs-8E-zo9" firstAttribute="width" secondItem="VfI-sS-cIZ" secondAttribute="width" id="3ZS-qX-nsG"/>
+                            <constraint firstItem="uIH-F3-cNe" firstAttribute="centerX" secondItem="0g1-in-KOG" secondAttribute="centerX" id="3cd-bg-mrN"/>
+                            <constraint firstItem="VfI-sS-cIZ" firstAttribute="height" secondItem="NjM-G5-3ba" secondAttribute="height" multiplier="36/667" id="4CA-OH-a2S"/>
+                            <constraint firstItem="ggs-8E-zo9" firstAttribute="height" secondItem="VfI-sS-cIZ" secondAttribute="height" id="4wS-fh-vQq"/>
+                            <constraint firstItem="CjR-ay-Ynl" firstAttribute="centerX" secondItem="WnQ-Xa-Kq9" secondAttribute="centerX" id="7qY-VI-NKL"/>
+                            <constraint firstItem="CjR-ay-Ynl" firstAttribute="width" secondItem="NjM-G5-3ba" secondAttribute="width" multiplier="315/375" id="C3E-hO-Fbi"/>
+                            <constraint firstItem="uIH-F3-cNe" firstAttribute="top" secondItem="0g1-in-KOG" secondAttribute="bottom" constant="26" id="CyR-ih-cDq"/>
+                            <constraint firstItem="VfI-sS-cIZ" firstAttribute="width" secondItem="NjM-G5-3ba" secondAttribute="width" multiplier="321/375" id="Ds7-92-zbS"/>
+                            <constraint firstItem="0g1-in-KOG" firstAttribute="width" secondItem="ggs-8E-zo9" secondAttribute="width" id="F14-eR-0ht"/>
+                            <constraint firstItem="0g1-in-KOG" firstAttribute="height" secondItem="ggs-8E-zo9" secondAttribute="height" id="HKU-fR-xjF"/>
+                            <constraint firstItem="VfI-sS-cIZ" firstAttribute="top" secondItem="uPT-aA-YwZ" secondAttribute="top" constant="140" id="Hle-xy-eCu"/>
+                            <constraint firstItem="WLR-Sn-ZIQ" firstAttribute="leading" secondItem="UYk-mH-uaA" secondAttribute="trailing" id="IMw-Nr-E7Y"/>
+                            <constraint firstItem="52v-yr-O9Q" firstAttribute="centerX" secondItem="NjM-G5-3ba" secondAttribute="centerX" id="LgN-7Y-K7b"/>
+                            <constraint firstItem="52v-yr-O9Q" firstAttribute="centerY" secondItem="NjM-G5-3ba" secondAttribute="centerY" id="MPG-gk-Dvh"/>
+                            <constraint firstItem="ggs-8E-zo9" firstAttribute="top" secondItem="VfI-sS-cIZ" secondAttribute="bottom" constant="26" id="MTc-Qj-WRj"/>
+                            <constraint firstItem="WnQ-Xa-Kq9" firstAttribute="centerX" secondItem="uIH-F3-cNe" secondAttribute="centerX" id="N07-hM-lBs"/>
+                            <constraint firstItem="uIH-F3-cNe" firstAttribute="height" secondItem="0g1-in-KOG" secondAttribute="height" id="NMr-mQ-fCn"/>
+                            <constraint firstItem="ggs-8E-zo9" firstAttribute="centerX" secondItem="VfI-sS-cIZ" secondAttribute="centerX" id="Qh4-Tv-r6X"/>
+                            <constraint firstItem="UYk-mH-uaA" firstAttribute="leading" secondItem="uPT-aA-YwZ" secondAttribute="leading" constant="49" id="SQL-fQ-GOL"/>
+                            <constraint firstItem="WnQ-Xa-Kq9" firstAttribute="height" secondItem="uIH-F3-cNe" secondAttribute="height" id="Ugy-qO-hR2"/>
+                            <constraint firstItem="52v-yr-O9Q" firstAttribute="width" secondItem="NjM-G5-3ba" secondAttribute="width" id="VFs-bu-lM2"/>
+                            <constraint firstItem="CjR-ay-Ynl" firstAttribute="top" secondItem="WnQ-Xa-Kq9" secondAttribute="bottom" constant="42" id="VcG-S2-Uo5"/>
+                            <constraint firstItem="WLR-Sn-ZIQ" firstAttribute="centerY" secondItem="UYk-mH-uaA" secondAttribute="centerY" id="XKO-OS-zKX"/>
+                            <constraint firstItem="VfI-sS-cIZ" firstAttribute="centerX" secondItem="52v-yr-O9Q" secondAttribute="centerX" id="aiq-fn-MMN"/>
+                            <constraint firstItem="CjR-ay-Ynl" firstAttribute="height" secondItem="NjM-G5-3ba" secondAttribute="height" multiplier="45/667" id="bcM-Wn-cmh"/>
+                            <constraint firstItem="uIH-F3-cNe" firstAttribute="width" secondItem="0g1-in-KOG" secondAttribute="width" id="cMX-W4-4Y2"/>
+                            <constraint firstItem="52v-yr-O9Q" firstAttribute="height" secondItem="NjM-G5-3ba" secondAttribute="height" id="fAs-cO-Y2M"/>
+                            <constraint firstItem="WLR-Sn-ZIQ" firstAttribute="centerY" secondItem="UYk-mH-uaA" secondAttribute="centerY" id="heC-6a-C5V"/>
+                            <constraint firstItem="WnQ-Xa-Kq9" firstAttribute="top" secondItem="uIH-F3-cNe" secondAttribute="bottom" constant="26" id="ms6-vb-df8"/>
+                            <constraint firstItem="0g1-in-KOG" firstAttribute="centerX" secondItem="ggs-8E-zo9" secondAttribute="centerX" id="tMi-Sm-0Pr"/>
+                            <constraint firstItem="0g1-in-KOG" firstAttribute="top" secondItem="ggs-8E-zo9" secondAttribute="bottom" constant="26" id="zHC-hp-xav"/>
+                            <constraint firstItem="WnQ-Xa-Kq9" firstAttribute="width" secondItem="uIH-F3-cNe" secondAttribute="width" id="zl2-rq-UTT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uPT-aA-YwZ"/>
+                        <connections>
+                            <outlet property="SignupBtn" destination="CjR-ay-Ynl" id="DPQ-8q-bAe"/>
+                            <outlet property="TermsBtn" destination="WLR-Sn-ZIQ" id="f6J-Kr-lTH"/>
+                            <outlet property="TermsLabel" destination="UYk-mH-uaA" id="amt-wS-rgk"/>
+                            <outlet property="background" destination="52v-yr-O9Q" id="2hS-z2-eC8"/>
+                            <outlet property="confirmPassword" destination="WnQ-Xa-Kq9" id="Jdp-pw-CAM"/>
+                            <outlet property="emailTxt" destination="ggs-8E-zo9" id="Cr8-f3-fbm"/>
+                            <outlet property="mobileTxt" destination="0g1-in-KOG" id="VnN-XC-wa8"/>
+                            <outlet property="nameTxt" destination="VfI-sS-cIZ" id="Bhn-o3-0TO"/>
+                            <outlet property="passwordTxt" destination="uIH-F3-cNe" id="gP5-0j-MSU"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="signUpView" destination="NjM-G5-3ba" id="3ly-vz-mNE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTq-wU-WuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="OTl-c6-xSd" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="28.125"/>
+        </scene>
+        <!--Reset PasswordVC-->
+        <scene sceneID="Lc7-Ty-UsA">
+            <objects>
+                <viewController storyboardIdentifier="ResetPasswordVC" id="sqJ-a0-Goh" customClass="ResetPasswordVC" customModule="IDEA_Hospital_Team4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DWK-pH-Cvd" customClass="ResetPasswordView" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Otl-nH-kCG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="U8M-Ps-yf6" customClass="IDEHospitalTextField" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="30" y="314" width="354" height="48.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameTxt:" destination="OTl-c6-xSd" eventType="editingDidEnd" id="7Ye-gU-lE4"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yF2-LH-R7K" customClass="IDEHospitalButton" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="30" y="409.5" width="354" height="60.5"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="ResetBtn:" destination="sqJ-a0-Goh" eventType="touchUpInside" id="fHK-kP-H3o"/>
+                                    <action selector="signUpBtn:" destination="Hcw-U3-HWb" eventType="touchUpInside" id="ukx-GF-5Cz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yF2-LH-R7K" firstAttribute="top" secondItem="U8M-Ps-yf6" secondAttribute="bottom" constant="47" id="3bo-tO-g2r"/>
+                            <constraint firstItem="Otl-nH-kCG" firstAttribute="width" secondItem="DWK-pH-Cvd" secondAttribute="width" id="9ly-PS-mmL"/>
+                            <constraint firstItem="Otl-nH-kCG" firstAttribute="height" secondItem="DWK-pH-Cvd" secondAttribute="height" id="HW4-22-OMU"/>
+                            <constraint firstItem="yF2-LH-R7K" firstAttribute="height" secondItem="DWK-pH-Cvd" secondAttribute="height" multiplier="45/667" id="Hkr-U4-nAe"/>
+                            <constraint firstItem="U8M-Ps-yf6" firstAttribute="centerX" secondItem="Ty1-nr-zt4" secondAttribute="centerX" id="KYp-7Q-462"/>
+                            <constraint firstItem="U8M-Ps-yf6" firstAttribute="height" secondItem="DWK-pH-Cvd" secondAttribute="height" multiplier="36/667" id="PZr-w4-uDT"/>
+                            <constraint firstItem="U8M-Ps-yf6" firstAttribute="top" secondItem="Ty1-nr-zt4" secondAttribute="top" constant="270" id="VdX-dK-bm1"/>
+                            <constraint firstItem="yF2-LH-R7K" firstAttribute="width" secondItem="U8M-Ps-yf6" secondAttribute="width" id="YMp-Hf-2lY"/>
+                            <constraint firstItem="U8M-Ps-yf6" firstAttribute="width" secondItem="DWK-pH-Cvd" secondAttribute="width" multiplier="321/375" id="dLY-eO-BrR"/>
+                            <constraint firstItem="yF2-LH-R7K" firstAttribute="centerX" secondItem="U8M-Ps-yf6" secondAttribute="centerX" id="fef-Il-z0C"/>
+                            <constraint firstItem="Otl-nH-kCG" firstAttribute="centerX" secondItem="DWK-pH-Cvd" secondAttribute="centerX" id="iHG-W2-0Ev"/>
+                            <constraint firstItem="Otl-nH-kCG" firstAttribute="centerY" secondItem="DWK-pH-Cvd" secondAttribute="centerY" id="px8-9V-56r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ty1-nr-zt4"/>
+                        <connections>
+                            <outlet property="background" destination="Otl-nH-kCG" id="I3G-kM-D2j"/>
+                            <outlet property="resetBtn" destination="yF2-LH-R7K" id="fR2-Jk-3p3"/>
+                            <outlet property="resetTextField" destination="U8M-Ps-yf6" id="p0U-6f-nnS"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="resetView" destination="DWK-pH-Cvd" id="XBz-Ap-aIi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ol-6e-qKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="28"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="jt9-SK-ZPW">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="UMR-Va-MKK" customClass="LoginVC" customModule="IDEA_Hospital_Team4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rpg-Eh-ULF" customClass="LoginView" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3eI-uj-Ubl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="gf3-fJ-OMv" customClass="IDEHospitalTextField" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="30" y="263" width="354" height="48.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="bck-hn-NiL" customClass="IDEHospitalTextField" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="30" y="330.5" width="354" height="48.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWi-MX-BGz" customClass="IDEHospitalButton" customModule="IDEA_Hospital_Team4" customModuleProvider="target">
+                                <rect key="frame" x="30" y="405" width="354" height="60.5"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInBtn:" destination="UMR-Va-MKK" eventType="touchUpInside" id="0Kq-Sr-AKa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWw-2F-4Qv">
+                                <rect key="frame" x="30" y="490.5" width="354" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="2ln-eo-gXA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetPassword:" destination="UMR-Va-MKK" eventType="touchUpInside" id="LcF-ZH-USK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don`t have account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjE-vl-OKo">
+                                <rect key="frame" x="142.5" y="532.5" width="129" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="gw3-y3-Obv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linelabel" translatesAutoresizingMaskIntoConstraints="NO" id="1yQ-vc-FdY">
+                                <rect key="frame" x="32" y="540" width="110.5" height="2"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linelabel" translatesAutoresizingMaskIntoConstraints="NO" id="Bb2-XL-V9R">
+                                <rect key="frame" x="271.5" y="540" width="110.5" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="zah-An-2Rx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBh-Ft-hhE">
+                                <rect key="frame" x="30" y="595.5" width="354" height="60.5"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="signUpBtn:" destination="UMR-Va-MKK" eventType="touchUpInside" id="JL4-7w-MP0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bck-hn-NiL" firstAttribute="width" secondItem="rpg-Eh-ULF" secondAttribute="width" multiplier="321/375" id="2MW-iH-aUn"/>
+                            <constraint firstItem="pWi-MX-BGz" firstAttribute="top" secondItem="bck-hn-NiL" secondAttribute="bottom" constant="26" id="6YF-tO-2TV"/>
+                            <constraint firstItem="pWi-MX-BGz" firstAttribute="width" secondItem="bck-hn-NiL" secondAttribute="width" id="6ie-fg-wQB"/>
+                            <constraint firstItem="XjE-vl-OKo" firstAttribute="top" secondItem="yWw-2F-4Qv" secondAttribute="bottom" constant="25" id="8Wy-Nj-bRT"/>
+                            <constraint firstItem="3eI-uj-Ubl" firstAttribute="centerX" secondItem="rpg-Eh-ULF" secondAttribute="centerX" id="97w-oY-kaL"/>
+                            <constraint firstItem="1yQ-vc-FdY" firstAttribute="width" secondItem="Bb2-XL-V9R" secondAttribute="width" id="BcA-oL-tnL"/>
+                            <constraint firstItem="bck-hn-NiL" firstAttribute="centerX" secondItem="bXg-S8-xlo" secondAttribute="centerX" id="DOQ-tc-BLC"/>
+                            <constraint firstItem="1yQ-vc-FdY" firstAttribute="centerY" secondItem="XjE-vl-OKo" secondAttribute="centerY" id="HW8-1h-Yyr"/>
+                            <constraint firstItem="Bb2-XL-V9R" firstAttribute="width" secondItem="rpg-Eh-ULF" secondAttribute="width" multiplier="100/375" id="I31-GS-93A"/>
+                            <constraint firstItem="eBh-Ft-hhE" firstAttribute="centerX" secondItem="XjE-vl-OKo" secondAttribute="centerX" id="J47-Di-AXP"/>
+                            <constraint firstItem="gf3-fJ-OMv" firstAttribute="width" secondItem="bck-hn-NiL" secondAttribute="width" id="OnO-A3-MuD"/>
+                            <constraint firstItem="Bb2-XL-V9R" firstAttribute="leading" secondItem="XjE-vl-OKo" secondAttribute="trailing" id="Rqc-eI-WmT"/>
+                            <constraint firstItem="Bb2-XL-V9R" firstAttribute="centerY" secondItem="XjE-vl-OKo" secondAttribute="centerY" id="SXz-Gt-6J6"/>
+                            <constraint firstItem="gf3-fJ-OMv" firstAttribute="centerX" secondItem="bck-hn-NiL" secondAttribute="centerX" id="TIr-Kp-EEU"/>
+                            <constraint firstItem="eBh-Ft-hhE" firstAttribute="width" secondItem="pWi-MX-BGz" secondAttribute="width" id="TMo-K5-6GN"/>
+                            <constraint firstItem="pWi-MX-BGz" firstAttribute="centerX" secondItem="bck-hn-NiL" secondAttribute="centerX" id="V8B-14-6r2"/>
+                            <constraint firstItem="XjE-vl-OKo" firstAttribute="width" secondItem="rpg-Eh-ULF" secondAttribute="width" multiplier="117/375" id="VJQ-0f-NIa"/>
+                            <constraint firstItem="1yQ-vc-FdY" firstAttribute="trailing" secondItem="XjE-vl-OKo" secondAttribute="leading" id="WWA-QB-ZRF"/>
+                            <constraint firstItem="3eI-uj-Ubl" firstAttribute="centerY" secondItem="rpg-Eh-ULF" secondAttribute="centerY" id="Xw7-LZ-peQ"/>
+                            <constraint firstItem="yWw-2F-4Qv" firstAttribute="centerX" secondItem="pWi-MX-BGz" secondAttribute="centerX" id="bk4-YZ-PSq"/>
+                            <constraint firstItem="eBh-Ft-hhE" firstAttribute="height" secondItem="pWi-MX-BGz" secondAttribute="height" id="dUb-rK-Uto"/>
+                            <constraint firstItem="XjE-vl-OKo" firstAttribute="centerX" secondItem="bXg-S8-xlo" secondAttribute="centerX" id="hDY-64-8y2"/>
+                            <constraint firstItem="bck-hn-NiL" firstAttribute="height" secondItem="rpg-Eh-ULF" secondAttribute="height" multiplier="36/667" id="jIv-Mh-MWQ"/>
+                            <constraint firstItem="3eI-uj-Ubl" firstAttribute="width" secondItem="rpg-Eh-ULF" secondAttribute="width" id="jwM-Pu-FeN"/>
+                            <constraint firstItem="1yQ-vc-FdY" firstAttribute="height" secondItem="Bb2-XL-V9R" secondAttribute="height" id="k3S-vg-oxV"/>
+                            <constraint firstItem="yWw-2F-4Qv" firstAttribute="width" secondItem="pWi-MX-BGz" secondAttribute="width" id="kiS-Ga-neD"/>
+                            <constraint firstItem="bck-hn-NiL" firstAttribute="top" secondItem="gf3-fJ-OMv" secondAttribute="bottom" constant="19" id="lk4-1x-8eK"/>
+                            <constraint firstItem="gf3-fJ-OMv" firstAttribute="height" secondItem="bck-hn-NiL" secondAttribute="height" id="mtL-FE-yqV"/>
+                            <constraint firstItem="3eI-uj-Ubl" firstAttribute="height" secondItem="rpg-Eh-ULF" secondAttribute="height" id="q9z-bf-SJf"/>
+                            <constraint firstItem="gf3-fJ-OMv" firstAttribute="top" secondItem="bXg-S8-xlo" secondAttribute="top" constant="175.19999999999999" id="qVV-kV-a8C"/>
+                            <constraint firstItem="yWw-2F-4Qv" firstAttribute="top" secondItem="pWi-MX-BGz" secondAttribute="bottom" constant="25" id="rpY-tu-JHT"/>
+                            <constraint firstItem="eBh-Ft-hhE" firstAttribute="top" secondItem="XjE-vl-OKo" secondAttribute="bottom" constant="46" id="tdJ-fu-ES1"/>
+                            <constraint firstItem="pWi-MX-BGz" firstAttribute="height" secondItem="rpg-Eh-ULF" secondAttribute="height" multiplier="45/667" id="vjC-9N-QK5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bXg-S8-xlo"/>
+                        <connections>
+                            <outlet property="background" destination="3eI-uj-Ubl" id="z9H-C4-5V7"/>
+                            <outlet property="emailTxt" destination="gf3-fJ-OMv" id="gqA-4Q-rvk"/>
+                            <outlet property="firstLineView" destination="Bb2-XL-V9R" id="uwU-4I-gd4"/>
+                            <outlet property="passwordTxt" destination="bck-hn-NiL" id="ub8-1B-AVK"/>
+                            <outlet property="resetPasswordBtn" destination="yWw-2F-4Qv" id="mdZ-r0-DEf"/>
+                            <outlet property="secondLineView" destination="1yQ-vc-FdY" id="Q6V-fP-Osw"/>
+                            <outlet property="signInBtn" destination="pWi-MX-BGz" id="QBm-bT-c31"/>
+                            <outlet property="signUpBtn" destination="eBh-Ft-hhE" id="xnW-8v-EAH"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="mhe-B0-bLt"/>
+                    <connections>
+                        <outlet property="loginView" destination="rpg-Eh-ULF" id="NTl-pK-N0e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uui-IN-3KU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2502.898550724638" y="26.785714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JOo-VM-CVx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lff-Pv-k9M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2an-Zq-Scf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UMR-Va-MKK" kind="relationship" relationship="rootViewController" id="MHd-Vl-X2v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bvk-WS-skd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592.753623188406" y="26.785714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="linelabel" width="100" height="2"/>
+    </resources>
+</document>

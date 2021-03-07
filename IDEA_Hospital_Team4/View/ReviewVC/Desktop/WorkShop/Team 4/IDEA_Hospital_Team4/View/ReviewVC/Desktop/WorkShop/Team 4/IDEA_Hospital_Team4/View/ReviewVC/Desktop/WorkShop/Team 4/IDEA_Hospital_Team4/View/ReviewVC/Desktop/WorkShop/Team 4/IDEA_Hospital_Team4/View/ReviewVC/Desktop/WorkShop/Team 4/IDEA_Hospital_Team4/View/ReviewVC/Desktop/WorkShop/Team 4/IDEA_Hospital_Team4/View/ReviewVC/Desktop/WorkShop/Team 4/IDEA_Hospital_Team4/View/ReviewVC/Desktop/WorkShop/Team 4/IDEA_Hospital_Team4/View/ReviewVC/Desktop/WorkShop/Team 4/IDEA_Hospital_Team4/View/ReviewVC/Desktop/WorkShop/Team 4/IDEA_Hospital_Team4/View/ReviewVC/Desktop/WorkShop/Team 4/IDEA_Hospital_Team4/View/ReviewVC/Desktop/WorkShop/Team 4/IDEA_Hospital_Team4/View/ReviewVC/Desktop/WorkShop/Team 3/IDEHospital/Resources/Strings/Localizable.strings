@@ -1,0 +1,126 @@
+"homeDescription" = "IDEA EG HOSPITAL THE BEST CHOICE";
+"chooseServices" = "Choose Services";
+"serviceSearch" = "Service Search";
+"done" = "done";
+"sorry" = "Sorry";
+"dataNotFound" = "Data Not Found";
+"ideaHospital" = "IDEA EG HOSPITAL";
+"ideaEgHospitalTheBestChoice" = "IDEA EG HOSPITAL THE BEST CHOICE";
+"chooseSpecialists" = "Choose Specialists";
+"chooseCity" = "Choose City";
+"chooseRegion" = "Choose Region";
+"chooseCompanies" = "Choose Companies";
+"DoctorName" = "Doctor Name";
+"findDoctor" = "Find a doctor";
+"homeNurse" = "Home Nurse";
+"nurseVcLabel" = "If you would like further information about how we can help you and your health it would be great to hear from you";
+"nameTextFieldPlaceholder" = "Your Name";
+"emailTextFieldPlaceholder" = "Your Email";
+"phoneTextFieldPlaceholder" = "Mobile Number";
+"enterDetails" = "Enter Details";
+"sendRequest" = "Send Request";
+"pleaseEnterName" = "Name Field is Empty, Please Re-Enter your Name";
+"nameFieldCountIsSmall" = "The name must be at least 3 characters";
+"pleaseEnterEmail" = "Email Field is Empty, Please Re-Enter your Email";
+"pleaseEnterPhoneNumber" = "Mobile Number Field is Empty, Please Re-Enter your Phone Number";
+"pleaseEnterPassword" = "Password Field is Empty, Please Re-Enter your Password";
+"pleaseConfirmPassword" = "Confirm Password Field is Empty, Please Confirm your Password";
+"rightPasswordFormatDescription" = "Password Filed is Empty or Doesn't Contain at least 1 Alphabet, 1 Number and 1 Special Character and Minimum 8 characters.";
+"disMatchedPassword" = "Password field isn't Match";
+"invalidE-mailFormat" = "Invalid E-mail Format";
+"rightPhoneNumberFormatDescription" = "The Entered Number Doesn't Start with 010,011,012 or 015 with Max 11 Numbers at All";
+"pleaseEnterDetails" = "Details Field is Empty, Please Write your Details";
+"successfulRequest" = "Successful Request";
+"successRequestMessage" = "Your Request have been Sent Successfully";
+"successLogin" = "You have been Logged in Successfully!";
+"successRegister" =  "You have been Registered Successfully!";
+"searchResult" = "Search Result";
+"sortBy" = "Sort By";
+"noSearchResult" = "No Search Result Found";
+"fees" = "Fees";
+"rating" = "Rating";
+"cellIdentifire" = "SearchResultTableViewCell";
+"watingTime" = "Wating Time: ";
+"minutes" = " minutes";
+"examinationFess" = "Examination Fees: ";
+"egyptionPound" =  " LE";
+"review" = " Review";
+"search" = "Search";
+"favorite" = "Favorite";
+"schedule" = "Schedule";
+"myFavorites" = "My Favorites";
+"myAppointment" = "My Appointments";
+//SideMenu
+"sideMenuEditProfile" = "Edit Profile";
+"sideMenuFavourites" = "Favourites";
+"sideMenuBookedAppointments" = "Booked Appointments";
+"sideMenuAboutUs " = "About Us";
+"sideMenuContactUs" = "Contact Us";
+"sideMenuShare" = "Share";
+"sideMenuTerms&Conditions" = "Terms & Conditions";
+"sideMenuLogouts" = "Logouts";
+"sideMenuLogin" = "Login";
+//Auth
+"signUp" = "SIGN UP";
+"login" = "LOGIN";
+"resetPassword" = "RESET PASSWORD";
+"choosePasswordPlaceholder" = "Choose Password";
+"enterPasswordPlaceholder" = "Enter Password";
+"confirm PasswordPlaceholder" = "Confirm Password";
+"don't_HavePassword" = "Don't Have account?";
+"setNewPassword" = "Set New Password";
+"loginButton" = "Login";
+"signUpButton" = "Sign Up";
+"setNewPassword" = "Set New Password";
+"instructions" = "By clicking sign up, you agree to our ";
+"terms" = "Terms & Conditions";
+"forgot" = "Forgot Password?";
+"loginFirst" = "You have to Login First to Select your Favorites";
+//contactUs
+"contactUsMainLabel" = "If you would like further information about how we can help you andyour health it would be great to hear from you.";
+"contactUsSmallLabel" = "For More information call: 19199";
+"yourMessage" = "Your Message";
+"send" = "Send";
+"enterMessage" = "Enter Message";
+//About
+"about" = "ABOUT";
+//terms and conditions
+"TermsAndConditions" = "Terms & Conditions";
+//Empty Table Meessage
+"LoginToShowYourData" = "Login To Show your data";
+"YouHaveNoAppointemts" = "You have no appointments";
+"youHaveNoFavorites" = "You have no favorites";
+//DoctorProfile
+"noReviews" = "This doctor has no reviews yet";
+"tabReview" = "TAB Review";
+"book" = "Book";
+"doctorProfile" = "Doctor Profile";
+"ExaminationFees" = "Examination Fees :";
+//Search Result
+"searchResult" = "Search Result";
+"viewOnMap" = "View on map";
+//Rating
+"submitReview" = "Submit Review";
+"pleaseRateDoctor" = "Please rate your experience with the doctor";
+"review" = "Review";
+"commentPlaceHolder" = "Add Comment";
+"successRatingAlert" = "Your Rating Have been Added Successfully!";
+"pleaseEnterComment" = "Comment Field is Empty, We Keen to Listen to your Comment";
+"commentFieldCountIsSmall" = "The Comment must be at least 3 characters";
+"noRatings" = "Please Leave Your Rating";
+//Voucher
+"doYouHaveVoucher" = "Do you have a Voucher Code?";
+"anotherPerson" = "Are you Booking for another person?";
+"yes" = "Yes";
+"no" = "No";
+"enterCode" = "Enter Code";
+"continue" = "Continue";
+"enterName" = "Enter Name";
+"pleaseEnterVoucher" = "Please Enter your Voucher";
+"pleaseEnterPatient" = "Please Enter Patiant Name";
+"noVoucher" = "The selected voucher is invalid.";
+"confirmYourAppointment" = "Confirm Your Appointment";
+"youAreAboutToBook" = "You are about to book an appointment on ";
+"successfulBooking" = "Appointment have been Booked Successfully";
+//Rating
+
